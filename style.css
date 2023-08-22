@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Happy Monkey', cursive;
+}
+main{
+    background-image: url(./Assets/fundo.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 60vw;
+    box-shadow: 2px 2px 2px 2px;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    position: relative;
+    bottom: 30px;
+}
+h3{
+    font-size: 1.4rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+button{
+    background: brown;
+}
+.img{
+    opacity: 0;
+    transition: opacity  2s ease-in-out;
+}
+.img.mostrar{
+    opacity: 1.;
+}
+
+
