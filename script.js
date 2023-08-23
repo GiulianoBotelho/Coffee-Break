@@ -5,13 +5,13 @@ let div = document.querySelector('div')
 let img = document.createElement('img')
 
 function encher() {
+    result.style.color ='black'
     msg.innerText = '';
     result.innerText = '';
     let ml = Number(mlCafe.value);
 
-    if (ml < 5) {
+    if (ml == 0 || ml < 5) {
         result.innerText = '';
-        msg.innerText = '';
         result.style.color = 'red'
         result.innerText = `Valor inválido! Digite um número a partir de 5ml!`
         return;
@@ -27,8 +27,8 @@ function encher() {
             img.src = './Assets/enchendo.png'
             div.appendChild(img);
             result.appendChild(p);
-
-        } if (ml > 325) {
+        }
+         if (ml > 325) {
             msg.innerText = '';
             msg.style.color = 'red'
             msg.innerText = 'Seu copo transbordou!!'
