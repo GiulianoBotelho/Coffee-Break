@@ -48,5 +48,6 @@ function encher() {
         setTimeout(loop, 350)
     }
     loop();
+    
 }
 
