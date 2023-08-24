@@ -13,6 +13,8 @@ function encher() {
     let ml = Number(mlCafe.value);
     
     if (ml == 0 || ml < 5) {
+        img.src = './Assets/cancelar.png'
+        div.appendChild(img);
         result.innerText = '';
         result.style.color = 'red'
         result.innerText = `Valor inválido! Digite um número a partir de 5ml!`
