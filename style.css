@@ -16,11 +16,12 @@ div{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: rgb(80, 25, 25);
     width: 60vw;
     box-shadow: 2px 2px 2px 2px;
     height: 50vh;
     border-radius: 20px;
+    opacity: 0.9;
 }
 
 section{
@@ -33,17 +34,29 @@ h1{
     font-size: 3rem;
     position: relative;
     bottom: 30px;
+    color: antiquewhite;
 }
 h3{
     font-size: 1.4rem;
+    color: antiquewhite;
 }
 
 p{
+    font-weight: 400;
     font-size: 1.1rem;
+    color: antiquewhite;
 }
 
 button{
+    cursor: pointer;
     background: brown;
+    border: none;
+    border-radius: 3px;
+    transition: 300ms;
+}
+button:hover{
+    transition: 300ms;
+    scale: 1.1;
 }
 
 
@@ -51,8 +64,14 @@ button{
     0% {opacity: 0;}
     100% {opacity: 1;}
   }
+
+figure{
+    width: 18vw;
+}
   
   img {
+    width: 256px;
+    height: 256px;
     animation-name: coffe;
     animation-duration: 2s;
   }
