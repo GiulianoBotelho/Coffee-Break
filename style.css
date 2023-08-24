@@ -45,12 +45,15 @@ p{
 button{
     background: brown;
 }
-.img{
-    opacity: 0;
-    transition: opacity  2s ease-in-out;
-}
-.img.mostrar{
-    opacity: 1.;
-}
 
 
+@keyframes coffe {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  img {
+    animation-name: coffe;
+    animation-duration: 2s;
+  }
+  
