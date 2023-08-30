@@ -3,8 +3,10 @@ let result = document.querySelector('h3#result')
 let msg = document.querySelector('h4#msg')
 let div = document.querySelector('div')
 let img = document.createElement('img')
+img.className = "minha-img"
 
 function encher() {
+    
     img.src = './Assets/enchendo.png'
     div.appendChild(img);
     result.style.color = 'black'
@@ -22,6 +24,7 @@ function encher() {
     }
     let incremento = ml;
     function loop() {
+        
         if (ml < 325) {
             result.innerText = '';
             msg.innerText = '';
@@ -46,10 +49,11 @@ function encher() {
             div.appendChild(img);
             return;
 
+            
         }
         setTimeout(loop, 350)
     }
     loop();
-
+    
 }
 

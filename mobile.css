@@ -1,0 +1,41 @@
+@media screen and (max-width:481px){
+    h1{
+        font-size: 2rem;
+
+        position: relative;
+        
+    }
+    h3{
+        font-size: 1rem;
+        
+    }
+    div{
+        height: 45vh;
+        width: 89vw;
+        justify-content: space-evenly;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    figure{
+        
+        width: 30vw;
+    }
+
+    .barist{
+      
+        width: 130px;
+        height: 130px;
+    }
+
+   .minha-img{
+       
+       width: 130px;
+        height: 130px;
+        position: relative;
+        right: 12vw;
+        bottom: 5px;
+    }
+}
