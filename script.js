@@ -5,8 +5,9 @@ let div = document.querySelector('div')
 let img = document.createElement('img')
 img.className = "minha-img"
 
+
 function encher() {
-    
+    document.querySelector("button").disabled = true;
     img.src = './Assets/enchendo.png'
     div.appendChild(img);
     result.style.color = 'black'
@@ -20,10 +21,12 @@ function encher() {
         result.innerText = '';
         result.style.color = 'red'
         result.innerText = `Valor inválido! Digite um número a partir de 5ml!`
+        document.querySelector("button").disabled = false;
         return;
     }
     let incremento = ml;
     function loop() {
+        document.querySelector("button").disabled = true;
         
         if (ml < 325) {
             result.innerText = '';
@@ -39,6 +42,7 @@ function encher() {
             msg.innerText = 'Seu copo transbordou!!'
             img.src = './Assets/derramar.png'
             div.appendChild(img);
+            document.querySelector("button").disabled = false;
             return;
         }
         if (ml == 325) {
@@ -47,13 +51,16 @@ function encher() {
             msg.innerText = `Parabéns! Você chegou ao valor esperado. Desfrute do seu delicioso café!!`
             img.src = './Assets/xicara.png'
             div.appendChild(img);
+            document.querySelector("button").disabled = false;
             return;
 
-            
+          
         }
         setTimeout(loop, 350)
     }
     loop();
+    document.querySelector("button").disabled = false;
+
     
 }
 
